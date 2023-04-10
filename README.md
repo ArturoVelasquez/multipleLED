@@ -1,2 +1,2 @@
-# multipleLED
-First aproach on controllng multiple LED using Arduino
+# multiple LED
+First aproach on controllng multiple LED using Arduino.
