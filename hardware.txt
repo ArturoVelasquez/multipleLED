@@ -1,0 +1,7 @@
+- Arduino UNO
+- white LED x 20
+- blue LED x 20
+- TLC 5940
+- Mosfet F9540N x 5
+- 2k resistor
+- 1k resistor x 5
