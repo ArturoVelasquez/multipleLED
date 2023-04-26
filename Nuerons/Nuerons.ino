@@ -14,7 +14,7 @@
 #define RowThree 8
 #define RowFour 6
 #define RowFive 5
-#define buttonNeuron 12
+
 
 int bright=2000;
 int verryBright=4095; 
@@ -35,12 +35,11 @@ void setup() {
   pinMode(RowFive, OUTPUT);
   pinMode(buttonNeuron,INPUT);
   Tlc.init();
-  randomSeed(42);
+  randomSeed(7);
 }
 
 void loop() {
-  buttonState = digitalRead(buttonNeuron);
-  for(int i ; i<3; i++){
+  for(int k=0 ; k<2; k++){
     actionPotential(RowOne);
     delay(50);
     rowsOff();
@@ -55,7 +54,7 @@ void loop() {
     rowsOff();
     delay(1000);
   }
-  for(int j; j<3; j++){
+  for(int j=0; j<2; j++){
     badActionPotential(RowOne);
     delay(50);
     rowsOff();
